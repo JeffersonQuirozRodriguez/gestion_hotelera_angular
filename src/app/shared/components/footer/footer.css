@@ -1,0 +1,12 @@
+.app-footer {
+background-color: #222;
+color: #aaa;
+padding: 1rem 2rem;
+text-align: center;
+font-size: 0.9rem;
+margin-top: auto; /* Para que se pegue al final de la página */
+}
+
+.app-footer p {
+margin: 0.5rem 0;
+}
