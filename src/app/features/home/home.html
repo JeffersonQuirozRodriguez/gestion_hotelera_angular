@@ -1,6 +1,8 @@
-<div class="home-container">
-  <h2>{{ welcomeMessage }}</h2>
-  <p>{{ description }}</p>
-  <button class="action-button">Explorar Reservas</button>
-  <button class="action-button secondary">Ver Habitaciones</button>
+<div class="container my-5 p-5 bg-white rounded shadow-lg text-center">
+  <h2 class="display-4 text-primary mb-4">{{ welcomeMessage }}</h2>
+  <p class="lead text-muted mb-5">{{ description }}</p>
+  <div class="d-grid gap-3 d-md-flex justify-content-md-center">
+    <button class="btn btn-primary btn-lg px-4 me-md-2" type="button" [routerLink]="'/reservations'">Explorar Reservas</button>
+    <button class="btn btn-outline-secondary btn-lg px-4" type="button">Ver Habitaciones</button>
+  </div>
 </div>

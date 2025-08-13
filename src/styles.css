@@ -1,6 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+/* Reinicio de CSS para eliminar márgenes y paddings predeterminados del navegador */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%; /* Asegura que el body ocupe la altura completa del viewport */
   width: 100%;  /* Asegura que el body ocupe el ancho completo del viewport */
+  overflow-x: hidden; /* Evita el scroll horizontal */
 }
+
+/* Box-sizing universal para un modelo de caja consistente */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Estilos globales de tipografía (puedes ajustarlos para que coincidan con las fuentes de Bootstrap o tus preferencias) */
+body {
+  font-family: 'Open Sans', sans-serif; /* Fuente para el cuerpo del texto */
+  color: #34495e; /* Un gris oscuro */
+  line-height: 1.6;
+  background-color: #fdfdfd; /* Blanco roto para el fondo principal */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Fuente para títulos */
+  color: #2c3e50; /* Azul oscuro/gris carbón */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+a {
+  color: #f39c12; /* Naranja/dorado para acentos */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e67e22; /* Un naranja más oscuro */
+}
+
+/* Puedes eliminar o comentar el resto de los estilos que definiste previamente para botones, page-container, etc.,
+   ya que Bootstrap proporcionará sus propias clases para eso. */
